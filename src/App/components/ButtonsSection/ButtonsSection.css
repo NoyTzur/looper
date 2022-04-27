@@ -1,0 +1,22 @@
+.buttons_wrapper {
+    text-align: center;
+    display: inline-block;
+}
+
+.buttons_container{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(220,220,220);
+    border-radius: 0px 0px 20px 20px;
+    padding: 8px;
+    width: 987px;
+    flex-direction: row;
+}
+
+.button{
+    background-color: transparent;
+    color: black;
+    border-radius: 30%;
+    border-color:  solid black;
+    margin: 5px;
+}
