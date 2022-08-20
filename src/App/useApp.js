@@ -1,4 +1,4 @@
-import { useCallback, useState, useRef, useMemo, useEffect } from "react";
+import { useCallback, useState, useMemo, useEffect } from "react";
 import { tracksConfig } from "../constants/tracksConfig.js";
 import { useAudio } from "./useAudio";
 
@@ -28,7 +28,6 @@ export const useApp = () => {
   }, [audio0, audio1, audio2, audio3, audio4, audio5, audio6, audio7, audio8]);
 
   const [isPlaying, setIsPlaying] = useState(false);
-  const cursorRef = useRef();
 
   const playAllChannels = useCallback(() => {
     setIsPlaying(true);
@@ -58,7 +57,6 @@ export const useApp = () => {
   return {
     audios,
     isPlaying,
-    cursorRef,
     playAllChannels,
     stopAllChannels,
     setLoop,

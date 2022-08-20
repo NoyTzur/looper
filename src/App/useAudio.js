@@ -41,6 +41,5 @@ export const useAudio = (props) => {
     stop,
     setLoop,
     setOnStop,
-    duration: audioElement.duration,
   };
 };
